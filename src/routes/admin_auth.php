@@ -1,6 +1,6 @@
 <?php
 
-use Developerlover\LaravelAddons\Middleware\Authenticate;
+use Developerlover\LaravelAddons\Http\Middleware\Authenticate;
 use Developerlover\LaravelAddons\Http\Controllers\Admin\Auth\ForgotPasswordFormController;
 use Developerlover\LaravelAddons\Http\Controllers\Admin\Auth\LoginController;
 use Developerlover\LaravelAddons\Http\Controllers\Admin\Auth\LogoutController;

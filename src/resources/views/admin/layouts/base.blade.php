@@ -46,7 +46,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin.login') }}">{{ __('Login') }}</a>
                             </li>
-                            @if (Route::has('register'))
+                            @if (Route::has('admin.register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('admin.register') }}">{{ __('Register') }}</a>
                                 </li>
@@ -77,14 +77,7 @@
 
         <div class="container-fluid">
             <div class="row flex-xl-nowrap">
-                @auth
-                    <div class="col-12 col-md-3 col-xl-2 bd-sidebar h-screen-sidebar py-4 bg-secondary">
-                        @include('admin/shared/sidebar')
-                    </div>
-                @endauth
-
                 <div class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5 bd-content mx-auto">
-                    @include('admin/shared/status-bar')
                     @yield('content')
                 </div>
             </div>
