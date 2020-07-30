@@ -11,7 +11,7 @@ class AdminServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->loadViewsFrom(__DIR__.'/resources/views/admin', 'laravel-addons');
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'laravel-addons');
     }
 
     /**
