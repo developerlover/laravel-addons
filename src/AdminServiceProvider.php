@@ -4,13 +4,14 @@ namespace Developerlover\LaravelAddons;
 
 use Illuminate\Support\ServiceProvider;
 
-class AdminAuthServiceProvider extends ServiceProvider
+class AdminServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
      */
     public function register()
     {
+        $this->loadViewsFrom(__DIR__.'/resources/views/admin', 'laravel-addons');
     }
 
     /**
@@ -18,5 +19,6 @@ class AdminAuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        include __DIR__.'/routes/admin_auth.php';
     }
 }
