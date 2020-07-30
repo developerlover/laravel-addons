@@ -14,5 +14,12 @@
     "minimum-stability": "dev",
     "require": {
         "laravel/framework": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Developerlover\\LaravelAddons\\AdminAuthServiceProvider"
+            ]
+        }
     }
 }
